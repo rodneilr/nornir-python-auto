@@ -1,0 +1,8 @@
+---
+
+routers:
+  connection_options:
+    netmiko:
+      platform: "cisco_ios_ssh"
+  data:
+    location: "rtp"

@@ -1,0 +1,1721 @@
+2024-01-02 12:20:32,153 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show version'} on 1 hosts
+2024-01-02 12:21:17,917 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip int br'} on 1 hosts
+2024-01-02 12:31:13,912 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip int br'} on 2 hosts
+2024-01-02 15:39:17,691 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show version', 'use_genie': True} on 2 hosts
+2024-01-02 15:43:20,996 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show version', 'use_genie': True} on 2 hosts
+2024-01-02 15:50:47,822 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show version', 'use_genie': True} on 2 hosts
+2024-01-02 15:51:24,006 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show version', 'use_genie': True} on 2 hosts
+2024-01-02 15:51:39,179 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show version', 'use_genie': True} on 2 hosts
+2024-01-02 15:53:20,895 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show version', 'use_genie': True} on 2 hosts
+2024-01-02 15:59:40,485 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show version', 'use_genie': True} on 2 hosts
+2024-01-02 16:03:04,777 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show version', 'use_genie': True} on 2 hosts
+2024-01-02 16:03:31,557 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show version', 'use_genie': True} on 2 hosts
+2024-01-02 16:05:50,075 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show version', 'use_genie': 'True'} on 2 hosts
+2024-01-02 16:06:16,978 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show version', 'use_genie': 'True'} on 2 hosts
+2024-01-02 16:12:26,242 -  nornir.core -     INFO -        run() - Running task 'get_facts' with args {} on 2 hosts
+2024-01-02 16:16:22,901 -  nornir.core -     INFO -        run() - Running task 'get_facts' with args {} on 2 hosts
+2024-01-02 22:33:31,565 -  nornir.core -     INFO -        run() - Running task 'get_info' with args {} on 2 hosts
+2024-01-02 22:33:31,567 - nornir.core.task -    ERROR -      start() - Host 'home-switch-1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2024-01-02 22:33:31,567 - nornir.core.task -    ERROR -      start() - Host 'home-switch-2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2024-01-02 22:33:31,567 - nornir.core.task -    ERROR -      start() - Host 'home-switch-1': task 'get_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 9, in get_info
+    r = task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-01-02 22:33:31,567 - nornir.core.task -    ERROR -      start() - Host 'home-switch-2': task 'get_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 9, in get_info
+    r = task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-01-02 22:34:24,609 -  nornir.core -     INFO -        run() - Running task 'get_info' with args {} on 2 hosts
+2024-01-02 22:34:24,611 - nornir.core.task -    ERROR -      start() - Host 'home-switch-1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2024-01-02 22:34:24,611 - nornir.core.task -    ERROR -      start() - Host 'home-switch-2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2024-01-02 22:34:24,611 - nornir.core.task -    ERROR -      start() - Host 'home-switch-1': task 'get_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 9, in get_info
+    r = task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-01-02 22:34:24,611 - nornir.core.task -    ERROR -      start() - Host 'home-switch-2': task 'get_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 9, in get_info
+    r = task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-01-02 22:35:39,138 -  nornir.core -     INFO -        run() - Running task 'get_info' with args {} on 2 hosts
+2024-01-02 22:35:39,141 - nornir.core.task -    ERROR -      start() - Host 'home-switch-1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2024-01-02 22:35:39,141 - nornir.core.task -    ERROR -      start() - Host 'home-switch-2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2024-01-02 22:35:39,141 - nornir.core.task -    ERROR -      start() - Host 'home-switch-1': task 'get_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 9, in get_info
+    r = task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-01-02 22:35:39,141 - nornir.core.task -    ERROR -      start() - Host 'home-switch-2': task 'get_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 9, in get_info
+    r = task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-01-02 22:37:52,744 -  nornir.core -     INFO -        run() - Running task 'get_info' with args {} on 2 hosts
+2024-01-02 22:37:52,746 - nornir.core.task -    ERROR -      start() - Host 'home-switch-2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2024-01-02 22:37:52,746 - nornir.core.task -    ERROR -      start() - Host 'home-switch-1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2024-01-02 22:37:52,746 - nornir.core.task -    ERROR -      start() - Host 'home-switch-2': task 'get_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 9, in get_info
+    r = task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-01-02 22:37:52,746 - nornir.core.task -    ERROR -      start() - Host 'home-switch-1': task 'get_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 9, in get_info
+    r = task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-01-02 22:39:56,583 -  nornir.core -     INFO -        run() - Running task 'get_info' with args {} on 2 hosts
+2024-01-02 22:39:56,585 - nornir.core.task -    ERROR -      start() - Host 'home-switch-1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2024-01-02 22:39:56,586 - nornir.core.task -    ERROR -      start() - Host 'home-switch-2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2024-01-02 22:39:56,586 - nornir.core.task -    ERROR -      start() - Host 'home-switch-1': task 'get_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 9, in get_info
+    r = task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-01-02 22:39:56,586 - nornir.core.task -    ERROR -      start() - Host 'home-switch-2': task 'get_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 9, in get_info
+    r = task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-01-02 22:45:07,588 -  nornir.core -     INFO -        run() - Running task 'get_info' with args {} on 2 hosts
+2024-01-02 22:45:07,591 - nornir.core.task -    ERROR -      start() - Host 'home-switch-1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2024-01-02 22:45:07,591 - nornir.core.task -    ERROR -      start() - Host 'home-switch-2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2024-01-02 22:45:07,591 - nornir.core.task -    ERROR -      start() - Host 'home-switch-1': task 'get_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "<ipython-input-1-6f944415d17a>", line 10, in get_info
+    r = task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-01-02 22:45:07,592 - nornir.core.task -    ERROR -      start() - Host 'home-switch-2': task 'get_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "<ipython-input-1-6f944415d17a>", line 10, in get_info
+    r = task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-01-02 22:45:46,009 -  nornir.core -     INFO -        run() - Running task 'get_info' with args {} on 2 hosts
+2024-01-02 22:45:46,011 - nornir.core.task -    ERROR -      start() - Host 'home-switch-2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2024-01-02 22:45:46,012 - nornir.core.task -    ERROR -      start() - Host 'home-switch-1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2024-01-02 22:45:46,012 - nornir.core.task -    ERROR -      start() - Host 'home-switch-2': task 'get_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 10, in get_info
+    r = task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-01-02 22:45:46,012 - nornir.core.task -    ERROR -      start() - Host 'home-switch-1': task 'get_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 10, in get_info
+    r = task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-01-02 22:47:52,697 -  nornir.core -     INFO -        run() - Running task 'get_info' with args {} on 2 hosts
+2024-01-02 22:51:12,055 -  nornir.core -     INFO -        run() - Running task 'get_facts' with args {} on 2 hosts
+2024-01-02 22:56:00,876 -  nornir.core -     INFO -        run() - Running task 'get_facts' with args {} on 2 hosts
+2024-01-02 22:56:27,199 -  nornir.core -     INFO -        run() - Running task 'get_facts' with args {} on 2 hosts
+2024-01-02 23:01:24,304 -  nornir.core -     INFO -        run() - Running task 'get_facts' with args {} on 2 hosts
+2024-01-03 13:18:47,347 -  nornir.core -     INFO -        run() - Running task 'get_info' with args {} on 2 hosts
+2024-01-03 13:18:48,685 - nornir.core.task -    ERROR -      start() - Host 'SW1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_os_version'
+
+2024-01-03 13:18:48,685 - nornir.core.task -    ERROR -      start() - Host 'SW1': task 'get_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 10, in get_info
+    r = task.run(task=napalm_get, getters=["get_facts", "os_version"])
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-01-03 13:18:49,535 - nornir.core.task -    ERROR -      start() - Host 'SW2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_os_version'
+
+2024-01-03 13:18:49,536 - nornir.core.task -    ERROR -      start() - Host 'SW2': task 'get_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 10, in get_info
+    r = task.run(task=napalm_get, getters=["get_facts", "os_version"])
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-01-03 13:20:01,976 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts', 'os_version']} on 2 hosts
+2024-01-03 13:20:03,307 - nornir.core.task -    ERROR -      start() - Host 'SW1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_os_version'
+
+2024-01-03 13:20:04,083 - nornir.core.task -    ERROR -      start() - Host 'SW2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_os_version'
+
+2024-01-03 13:20:25,143 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 13:21:17,951 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts', 'interfaces']} on 2 hosts
+2024-01-03 13:22:06,774 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts', 'os_version']} on 2 hosts
+2024-01-03 13:22:08,317 - nornir.core.task -    ERROR -      start() - Host 'SW1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_os_version'
+
+2024-01-03 13:22:09,219 - nornir.core.task -    ERROR -      start() - Host 'SW2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_os_version'
+
+2024-01-03 13:22:24,114 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 13:23:16,329 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts', 'os_version']} on 2 hosts
+2024-01-03 13:23:17,619 - nornir.core.task -    ERROR -      start() - Host 'SW1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_os_version'
+
+2024-01-03 13:23:18,595 - nornir.core.task -    ERROR -      start() - Host 'SW2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_os_version'
+
+2024-01-03 13:23:46,636 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts', 'model']} on 2 hosts
+2024-01-03 13:23:47,921 - nornir.core.task -    ERROR -      start() - Host 'SW1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_model'
+
+2024-01-03 13:23:48,642 - nornir.core.task -    ERROR -      start() - Host 'SW2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_model'
+
+2024-01-03 13:27:36,003 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts', 'model']} on 2 hosts
+2024-01-03 13:27:37,321 - nornir.core.task -    ERROR -      start() - Host 'SW1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_model'
+
+2024-01-03 13:27:38,339 - nornir.core.task -    ERROR -      start() - Host 'SW2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_model'
+
+2024-01-03 13:29:08,148 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 13:35:55,703 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts', 'ping']} on 2 hosts
+2024-01-03 13:35:57,009 - nornir.core.task -    ERROR -      start() - Host 'SW1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_ping'
+
+2024-01-03 13:35:57,684 - nornir.core.task -    ERROR -      start() - Host 'SW2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_ping'
+
+2024-01-03 13:36:25,808 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 13:41:32,257 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 13:46:52,889 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 13:47:43,003 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 13:48:04,680 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 13:48:32,779 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 13:51:06,281 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 13:51:43,008 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 13:53:04,455 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 13:53:47,618 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 13:54:11,557 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 13:56:51,915 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 13:58:10,793 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 13:58:33,976 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 13:59:08,178 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 14:01:10,170 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 14:02:42,559 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 14:04:30,375 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 14:04:51,943 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 14:07:31,000 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 14:07:57,161 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 14:08:37,871 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 14:09:52,360 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 14:11:56,449 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 14:12:35,941 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 14:13:11,557 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 14:21:14,083 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2024-01-03 14:25:48,539 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['interfaces']} on 2 hosts
+2024-01-03 14:35:40,370 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts', 'interfaces']} on 2 hosts
+2024-01-03 14:38:17,867 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 14:41:10,145 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 14:41:34,091 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 14:41:54,713 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 14:43:04,537 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 14:44:06,487 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 14:44:34,374 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 14:45:26,587 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 14:57:39,057 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 15:08:12,829 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 15:09:23,640 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 15:10:28,910 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 16:13:44,907 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 16:16:04,300 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 16:19:02,157 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 16:20:38,467 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 16:21:19,119 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 16:22:01,218 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 16:30:32,512 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 16:32:22,147 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 16:42:48,516 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 16:43:45,766 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 16:47:10,545 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 16:49:48,628 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 18:35:45,175 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 18:43:18,391 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 18:49:35,061 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 18:49:37,257 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': 'show ver'} on 2 hosts
+2024-01-03 18:49:37,259 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_cli.py", line 20, in napalm_cli
+    result = device.cli(commands)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/ios/ios.py", line 2521, in cli
+    raise TypeError("Please enter a valid list of commands!")
+TypeError: Please enter a valid list of commands!
+
+2024-01-03 18:49:37,259 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_cli.py", line 20, in napalm_cli
+    result = device.cli(commands)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/ios/ios.py", line 2521, in cli
+    raise TypeError("Please enter a valid list of commands!")
+TypeError: Please enter a valid list of commands!
+
+2024-01-03 18:50:06,392 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 18:50:08,570 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show ver']} on 2 hosts
+2024-01-03 19:10:06,197 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': 'get_facts'} on 2 hosts
+2024-01-03 19:10:08,474 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['dir']} on 2 hosts
+2024-01-03 20:03:41,286 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show version', 'use_textfsm': 'True'} on 2 hosts
+2024-01-03 20:04:24,548 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show version', 'use_textfsm': 'True'} on 2 hosts
+2024-01-03 20:05:20,386 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show flash:', 'use_textfsm': 'True'} on 2 hosts
+2024-01-03 20:06:32,911 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'dir', 'use_textfsm': 'True'} on 2 hosts
+2024-01-03 20:11:13,706 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ver', 'use_textfsm': 'True'} on 2 hosts
+2024-01-03 20:17:17,251 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ver', 'use_textfsm': 'True'} on 2 hosts
+2024-01-03 20:17:54,933 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ver', 'use_textfsm': 'True'} on 2 hosts
+2024-01-03 20:19:58,449 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ver', 'use_textfsm': 'True'} on 2 hosts
+2024-01-03 20:21:27,420 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ver', 'use_textfsm': 'True'} on 2 hosts
+2024-01-03 20:22:20,755 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ver', 'use_textfsm': 'True'} on 2 hosts
+2024-01-03 20:22:55,674 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ver', 'use_textfsm': 'True'} on 2 hosts
+2024-01-03 20:23:29,763 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ver', 'use_textfsm': 'True'} on 2 hosts
+2024-01-03 20:25:47,648 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ver', 'use_textfsm': 'True'} on 2 hosts
+2024-01-03 20:30:54,928 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ver', 'use_textfsm': 'True'} on 2 hosts
+2024-01-03 20:37:15,608 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_example' with args {} on 2 hosts
+2024-01-03 20:37:32,384 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_example' with args {} on 2 hosts
+2024-01-03 20:41:18,202 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_example' with args {} on 2 hosts
+2024-01-03 20:49:34,792 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_example' with args {} on 2 hosts
+2024-01-03 20:50:29,361 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_example' with args {} on 2 hosts
+2024-01-03 20:50:44,917 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_example' with args {} on 2 hosts
+2024-01-03 20:54:04,689 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_example' with args {} on 2 hosts
+2024-01-03 20:54:05,802 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 17, in nornir_netmiko_textfsm_example
+    for host,interface in interfaces:
+ValueError: too many values to unpack (expected 2)
+
+2024-01-03 20:54:06,828 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 17, in nornir_netmiko_textfsm_example
+    for host,interface in interfaces:
+ValueError: too many values to unpack (expected 2)
+
+2024-01-03 20:54:38,794 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_example' with args {} on 2 hosts
+2024-01-03 20:55:22,194 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_example' with args {} on 2 hosts
+2024-01-03 22:17:39,938 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_example' with args {} on 2 hosts
+2024-01-03 22:20:04,473 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_example' with args {} on 2 hosts
+2024-01-03 22:21:04,936 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_example' with args {} on 2 hosts
+2024-01-03 22:21:06,058 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 20, in nornir_netmiko_textfsm_example
+    rprint(interface["hostname"],+ "," + interface["running_image"])
+TypeError: bad operand type for unary +: 'str'
+
+2024-01-03 22:21:06,752 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_example' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 20, in nornir_netmiko_textfsm_example
+    rprint(interface["hostname"],+ "," + interface["running_image"])
+TypeError: bad operand type for unary +: 'str'
+
+2024-01-03 22:21:28,077 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_example' with args {} on 2 hosts
+2024-01-03 22:23:49,154 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_example' with args {} on 2 hosts
+2024-01-04 21:53:35,954 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_example' with args {} on 2 hosts
+2024-01-04 21:54:14,678 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 21:56:57,955 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 21:58:44,030 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 22:00:43,768 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 22:01:50,830 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 22:02:31,847 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 22:04:04,230 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 22:24:49,861 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 22:26:18,506 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 22:45:14,514 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 22:49:17,638 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 22:54:09,699 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:04:58,008 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:06:30,494 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:24:21,969 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:27:37,770 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:27:39,070 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    for key in result[index]:
+TypeError: 'Result' object is not iterable
+
+2024-01-04 23:27:39,880 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    for key in result[index]:
+TypeError: 'Result' object is not iterable
+
+2024-01-04 23:29:38,220 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:29:39,398 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 58, in nornir_netmiko_textfsm_format
+    for key in result[index]:
+TypeError: 'Result' object is not iterable
+
+2024-01-04 23:29:40,393 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 58, in nornir_netmiko_textfsm_format
+    for key in result[index]:
+TypeError: 'Result' object is not iterable
+
+2024-01-04 23:30:32,948 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:32:00,212 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:32:28,287 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:33:57,999 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:37:29,582 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:38:30,985 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:39:25,909 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:40:51,667 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:41:29,597 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:49:28,385 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:52:37,687 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:53:20,111 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:53:21,328 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 62, in nornir_netmiko_textfsm_format
+    if device_items[index]['name'] in firm_file:
+TypeError: argument of type 're.Pattern' is not iterable
+
+2024-01-04 23:53:21,959 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 62, in nornir_netmiko_textfsm_format
+    if device_items[index]['name'] in firm_file:
+TypeError: argument of type 're.Pattern' is not iterable
+
+2024-01-04 23:56:22,383 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:56:23,840 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 62, in nornir_netmiko_textfsm_format
+    if device_items[index]['name'] in firm_file.pattern(device_items):
+TypeError: 'str' object is not callable
+
+2024-01-04 23:56:24,257 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 62, in nornir_netmiko_textfsm_format
+    if device_items[index]['name'] in firm_file.pattern(device_items):
+TypeError: 'str' object is not callable
+
+2024-01-04 23:57:49,559 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-04 23:57:50,866 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 63, in nornir_netmiko_textfsm_format
+    if firm_file.pattern(device_items):
+TypeError: 'str' object is not callable
+
+2024-01-04 23:57:51,558 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 63, in nornir_netmiko_textfsm_format
+    if firm_file.pattern(device_items):
+TypeError: 'str' object is not callable
+
+2024-01-05 00:04:33,659 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-05 00:05:24,386 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-05 00:07:58,260 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-05 00:12:19,681 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-05 00:15:07,870 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-05 00:15:08,785 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/netmiko/base_connection.py", line 1765, in send_command
+    command_string = self.normalize_cmd(command_string)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/netmiko/base_connection.py", line 1982, in normalize_cmd
+    command = command.rstrip()
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2024-01-05 00:15:08,786 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 44, in nornir_netmiko_textfsm_format
+    result=task.run(task=netmiko_send_command, command_string=["show ver", "dir"], use_textfsm=True)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-01-05 00:15:09,687 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/netmiko/base_connection.py", line 1765, in send_command
+    command_string = self.normalize_cmd(command_string)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/netmiko/base_connection.py", line 1982, in normalize_cmd
+    command = command.rstrip()
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2024-01-05 00:15:09,688 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 44, in nornir_netmiko_textfsm_format
+    result=task.run(task=netmiko_send_command, command_string=["show ver", "dir"], use_textfsm=True)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2024-01-05 00:15:35,155 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-05 00:18:23,913 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-05 18:28:09,296 -  nornir.core -     INFO -        run() - Running task 'napalm_ping' with args {'dest': '192.168.220.1'} on 2 hosts
+2024-01-05 18:28:20,256 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 37, in napalm_ping
+    result = device.ping(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/ios/ios.py", line 3367, in ping
+    output = self._send_command(command)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/ios/ios.py", line 208, in _send_command
+    output = self.device.send_command(command)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'E40TH_SWITCH\\#' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-01-05 18:28:22,993 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'napalm_ping' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_ping.py", line 37, in napalm_ping
+    result = device.ping(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/ios/ios.py", line 3367, in ping
+    output = self._send_command(command)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/napalm/ios/ios.py", line 208, in _send_command
+    output = self.device.send_command(command)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/netmiko/base_connection.py", line 110, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/netmiko/utilities.py", line 595, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/netmiko/base_connection.py", line 1824, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'E40TH_SWITCH_2\\#' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-01-05 18:28:35,178 -  nornir.core -     INFO -        run() - Running task 'napalm_ping' with args {'dest': '10.10.20.1'} on 2 hosts
+2024-01-05 18:29:03,052 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-05 18:52:08,605 -  nornir.core -     INFO -        run() - Running task 'napalm_ping' with args {'dest': '10.10.20.1'} on 2 hosts
+2024-01-05 18:52:31,390 -  nornir.core -     INFO -        run() - Running task 'napalm_ping' with args {'dest': '10.10.20.1'} on 2 hosts
+2024-01-09 11:06:34,965 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 11:07:28,696 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 11:31:15,289 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 11:32:08,458 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 11:32:09,723 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 11:32:10,328 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 11:36:53,862 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 11:36:55,312 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 11:36:55,756 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 11:40:08,105 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 11:40:09,499 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 11:40:10,050 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 11:40:37,613 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 11:40:38,673 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 11:40:39,618 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 11:41:17,319 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 11:41:18,460 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 11:41:19,180 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 11:56:14,980 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 11:56:16,059 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 11:56:17,022 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 11:59:49,751 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 11:59:50,898 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 11:59:51,683 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 12:00:17,457 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:00:18,619 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 12:00:19,341 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 12:00:40,764 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:00:41,861 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 12:00:42,726 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 12:03:29,504 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:03:30,660 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 12:03:31,322 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 54, in nornir_netmiko_textfsm_format
+    df.to_excel('machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 12:07:25,433 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:07:26,821 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 55, in nornir_netmiko_textfsm_format
+    df.to_excel('/home/rodneilr/nornir_automation/machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 12:07:27,431 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 55, in nornir_netmiko_textfsm_format
+    df.to_excel('/home/rodneilr/nornir_automation/machine.xlsx')
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+2024-01-09 12:14:04,418 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:16:05,034 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:19:40,760 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:21:42,090 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:22:45,250 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:27:47,895 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:27:49,052 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    df.close()
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6204, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'close'
+
+2024-01-09 12:27:49,889 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    df.close()
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6204, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'close'
+
+2024-01-09 12:29:05,909 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:29:07,019 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    df.save()
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6204, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'save'
+
+2024-01-09 12:29:08,023 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    df.save()
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6204, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'save'
+
+2024-01-09 12:42:26,940 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:42:28,015 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with pd.ExcelWriter(host_excel,mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 203, in __init__
+    raise ValueError("Append mode is not supported with xlsxwriter!")
+ValueError: Append mode is not supported with xlsxwriter!
+
+2024-01-09 12:42:28,942 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with pd.ExcelWriter(host_excel,mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 203, in __init__
+    raise ValueError("Append mode is not supported with xlsxwriter!")
+ValueError: Append mode is not supported with xlsxwriter!
+
+2024-01-09 12:43:43,076 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:43:44,182 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with pd.ExcelWriter(host_excel,mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 203, in __init__
+    raise ValueError("Append mode is not supported with xlsxwriter!")
+ValueError: Append mode is not supported with xlsxwriter!
+
+2024-01-09 12:43:45,027 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with pd.ExcelWriter(host_excel,mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 203, in __init__
+    raise ValueError("Append mode is not supported with xlsxwriter!")
+ValueError: Append mode is not supported with xlsxwriter!
+
+2024-01-09 12:44:28,097 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:44:29,223 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with pd.ExcelWriter(host_excel,mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 203, in __init__
+    raise ValueError("Append mode is not supported with xlsxwriter!")
+ValueError: Append mode is not supported with xlsxwriter!
+
+2024-01-09 12:44:30,047 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with pd.ExcelWriter(host_excel,mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 203, in __init__
+    raise ValueError("Append mode is not supported with xlsxwriter!")
+ValueError: Append mode is not supported with xlsxwriter!
+
+2024-01-09 12:45:21,843 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:45:22,922 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with df.ExcelWriter(host_excel,mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6204, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'ExcelWriter'
+
+2024-01-09 12:45:23,822 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with df.ExcelWriter(host_excel,mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6204, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'ExcelWriter'
+
+2024-01-09 12:46:04,640 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:46:05,730 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with df.ExcelWriter(host_excel,mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6204, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'ExcelWriter'
+
+2024-01-09 12:46:06,615 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with df.ExcelWriter(host_excel,mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6204, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'ExcelWriter'
+
+2024-01-09 12:47:06,546 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:47:07,650 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with df.ExcelWriter(host_excel,mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6204, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'ExcelWriter'
+
+2024-01-09 12:47:08,517 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with df.ExcelWriter(host_excel,mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6204, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'ExcelWriter'
+
+2024-01-09 12:50:08,700 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:50:09,810 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with pd.ExcelWriter('machine.xlsx',mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 203, in __init__
+    raise ValueError("Append mode is not supported with xlsxwriter!")
+ValueError: Append mode is not supported with xlsxwriter!
+
+2024-01-09 12:50:10,850 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with pd.ExcelWriter('machine.xlsx',mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 203, in __init__
+    raise ValueError("Append mode is not supported with xlsxwriter!")
+ValueError: Append mode is not supported with xlsxwriter!
+
+2024-01-09 12:50:58,737 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:50:59,819 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with pd.ExcelWriter(host_excel,mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 203, in __init__
+    raise ValueError("Append mode is not supported with xlsxwriter!")
+ValueError: Append mode is not supported with xlsxwriter!
+
+2024-01-09 12:51:00,529 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with pd.ExcelWriter(host_excel,mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 203, in __init__
+    raise ValueError("Append mode is not supported with xlsxwriter!")
+ValueError: Append mode is not supported with xlsxwriter!
+
+2024-01-09 12:51:59,562 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:52:00,614 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with pd.ExcelWriter(host_excel,mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 203, in __init__
+    raise ValueError("Append mode is not supported with xlsxwriter!")
+ValueError: Append mode is not supported with xlsxwriter!
+
+2024-01-09 12:52:01,529 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with pd.ExcelWriter(host_excel,mode='a') as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 203, in __init__
+    raise ValueError("Append mode is not supported with xlsxwriter!")
+ValueError: Append mode is not supported with xlsxwriter!
+
+2024-01-09 12:54:04,304 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 12:54:05,368 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with pd.ExcelWriter(host_excel,mode='a', if_sheet_exists="replace") as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 203, in __init__
+    raise ValueError("Append mode is not supported with xlsxwriter!")
+ValueError: Append mode is not supported with xlsxwriter!
+
+2024-01-09 12:54:06,272 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    with pd.ExcelWriter(host_excel,mode='a', if_sheet_exists="replace") as writer:
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/pandas/io/excel/_xlsxwriter.py", line 203, in __init__
+    raise ValueError("Append mode is not supported with xlsxwriter!")
+ValueError: Append mode is not supported with xlsxwriter!
+
+2024-01-09 20:44:26,002 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 20:45:41,182 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 20:51:21,148 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 20:52:08,529 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 20:53:25,505 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 20:57:25,223 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 20:58:35,817 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 20:58:36,849 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    if "dynamic" in task.host['facts'][x]['admin_mode']:
+KeyError: 'admin_mode'
+
+2024-01-09 20:58:37,861 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    if "dynamic" in task.host['facts'][x]['admin_mode']:
+KeyError: 'admin_mode'
+
+2024-01-09 21:07:40,720 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 21:07:42,897 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    if "dynamic" in task.host['facts'][x]['admin_mode']:
+IndexError: list index out of range
+
+2024-01-09 21:09:05,875 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 21:09:08,114 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    if "trunk" in task.host['facts'][x]['admin_mode']:
+IndexError: list index out of range
+
+2024-01-09 21:12:01,511 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 21:12:03,571 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 58, in nornir_netmiko_textfsm_format
+    print("trunk port on interface ", + task.host['facts'][x]['interface'])
+TypeError: bad operand type for unary +: 'str'
+
+2024-01-09 21:12:03,572 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 58, in nornir_netmiko_textfsm_format
+    print("trunk port on interface ", + task.host['facts'][x]['interface'])
+TypeError: bad operand type for unary +: 'str'
+
+2024-01-09 21:12:20,520 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 21:12:22,727 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    if "trunk" in task.host['facts'][x]['admin_mode']:
+IndexError: list index out of range
+
+2024-01-09 21:30:57,491 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 21:30:59,622 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    if "trunk" in task.host['facts'][x]['admin_mode']:
+IndexError: list index out of range
+
+2024-01-09 21:32:40,842 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 21:32:43,060 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    if "trunk" in task.host['facts'][x]['admin_mode']:
+IndexError: list index out of range
+
+2024-01-09 21:36:10,260 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 21:36:12,402 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    if "trunk" in task.host['facts'][x]['admin_mode']:
+IndexError: list index out of range
+
+2024-01-09 21:37:57,100 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 21:37:59,159 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 59, in nornir_netmiko_textfsm_format
+    print("Device: " + task.host + "trunk port on interface " + task.host['facts'][x]['interface'])
+TypeError: can only concatenate str (not "Host") to str
+
+2024-01-09 21:37:59,159 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 59, in nornir_netmiko_textfsm_format
+    print("Device: " + task.host + "trunk port on interface " + task.host['facts'][x]['interface'])
+TypeError: can only concatenate str (not "Host") to str
+
+2024-01-09 21:38:28,323 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 21:38:30,330 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 59, in nornir_netmiko_textfsm_format
+    print("Device: " + task.host + "trunk port on interface " + task.host['facts'][x]['interface'])
+TypeError: can only concatenate str (not "Host") to str
+
+2024-01-09 21:38:30,330 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 59, in nornir_netmiko_textfsm_format
+    print("Device: " + task.host + "trunk port on interface " + task.host['facts'][x]['interface'])
+TypeError: can only concatenate str (not "Host") to str
+
+2024-01-09 21:38:49,692 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 21:38:51,892 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 58, in nornir_netmiko_textfsm_format
+    print("Device: " + task.host + "trunk port on interface " + task.host['facts'][x]['interface'])
+TypeError: can only concatenate str (not "Host") to str
+
+2024-01-09 21:38:51,892 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 58, in nornir_netmiko_textfsm_format
+    print("Device: " + task.host + "trunk port on interface " + task.host['facts'][x]['interface'])
+TypeError: can only concatenate str (not "Host") to str
+
+2024-01-09 21:39:28,976 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 21:39:31,012 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 58, in nornir_netmiko_textfsm_format
+    print("Device: " + task.host + "trunk port on interface " + task.host['facts'][x]['interface'])
+TypeError: can only concatenate str (not "Host") to str
+
+2024-01-09 21:39:31,095 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 58, in nornir_netmiko_textfsm_format
+    print("Device: " + task.host + "trunk port on interface " + task.host['facts'][x]['interface'])
+TypeError: can only concatenate str (not "Host") to str
+
+2024-01-09 21:41:06,497 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 21:41:08,694 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    if "trunk" in task.host['facts'][x]['admin_mode']:
+IndexError: list index out of range
+
+2024-01-09 21:42:00,177 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 21:42:02,250 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 58, in nornir_netmiko_textfsm_format
+    print(task.host + "has a trunk port on interface " + task.host['facts'][x]['interface'])
+TypeError: unsupported operand type(s) for +: 'Host' and 'str'
+
+2024-01-09 21:42:02,250 - nornir.core.task -    ERROR -      start() - Host '10.10.10.2': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 58, in nornir_netmiko_textfsm_format
+    print(task.host + "has a trunk port on interface " + task.host['facts'][x]['interface'])
+TypeError: unsupported operand type(s) for +: 'Host' and 'str'
+
+2024-01-09 21:42:42,514 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 21:42:44,630 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    if "trunk" in task.host['facts'][x]['admin_mode']:
+IndexError: list index out of range
+
+2024-01-09 21:44:01,496 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 21:44:03,574 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    if "trunk" in task.host['facts'][x]['admin_mode']:
+IndexError: list index out of range
+
+2024-01-09 21:44:15,782 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 21:44:18,099 - nornir.core.task -    ERROR -      start() - Host '10.10.10.3': task 'nornir_netmiko_textfsm_format' failed with traceback:
+Traceback (most recent call last):
+  File "/home/rodneilr/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/rodneilr/nornir_automation/send-commands-netmiko.py", line 57, in nornir_netmiko_textfsm_format
+    if "trunk" in task.host['facts'][x]['admin_mode']:
+IndexError: list index out of range
+
+2024-01-09 22:56:48,847 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 22:58:15,367 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
+2024-01-09 23:00:38,417 -  nornir.core -     INFO -        run() - Running task 'nornir_netmiko_textfsm_format' with args {} on 2 hosts
